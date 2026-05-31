@@ -4,11 +4,11 @@ Add-Type -AssemblyName WindowsBase
 Add-Type -AssemblyName System.Windows.Forms
 
 # ── PATHS ────────────────────────────────────────────────────
-$ScriptPath    = "E:\Livecycle\Set-LivelyWallpaper.ps1"
+$ScriptPath    = "$env:APPDATA\Livecycle\Set-LivelyWallpaper.ps1"
 $LivelyExe     = ""  # Will be detected at runtime
-$ConfigFile    = "E:\Livecycle\config.json"
+$ConfigFile    = "$env:APPDATA\Livecycle\config.json"
 $StateFile     = "$env:TEMP\lively_current_wallpaper.txt"
-$WallpaperDir  = "E:\Livecycle\wallpapers"
+$WallpaperDir  = "$env:APPDATA\Livecycle\wallpapers"
 
 # Ensure wallpaper dir exists
 if (-not (Test-Path $WallpaperDir)) { New-Item -ItemType Directory -Path $WallpaperDir | Out-Null }
