@@ -1,0 +1,12 @@
+# Compiled output
+*.exe
+
+# Installer output
+Installer/
+
+# Livecycle user data
+config.json
+wallpapers/
+
+# Build artifacts
+*.tmp
